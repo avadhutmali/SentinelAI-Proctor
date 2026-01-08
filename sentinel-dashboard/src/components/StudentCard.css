@@ -1,0 +1,99 @@
+.student-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.student-card.selected {
+  border-color: #6366f1;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.card-header {
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.student-avatar {
+  font-size: 2.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 50%;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #ccc;
+}
+
+.card-body {
+  margin-bottom: 1rem;
+}
+
+.student-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  color: #1a1a1a;
+}
+
+.student-id {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+.violation-section {
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.violation-section.active {
+  background-color: #f8d7da;
+}
+
+.violation-label {
+  color: #c41c3b;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.violation-text {
+  color: #c41c3b;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.safe-label {
+  color: #155724;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.violation-time {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0.5rem 0 0 0;
+}

@@ -1,0 +1,264 @@
+.tests-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+}
+
+/* Header */
+.tests-header {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.25rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tests-header .header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.tests-header h1 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin: 0 0 0.25rem 0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tests-header .logo-icon {
+  font-size: 1.75rem;
+}
+
+.tests-header .subtitle {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.tests-header > .header-content > p {
+  color: #666;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* Role Selector - REMOVED */
+
+/* Content Layout */
+.content-layout {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* Teacher Section */
+.teacher-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.create-card {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 2px dashed #e0e0e0;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.create-card h2 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin: 0 0 0.75rem 0;
+}
+
+.create-card p {
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* Tests List */
+.tests-list {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tests-list h2 {
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  margin: 0 0 1.5rem 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+}
+
+.tests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.test-item {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+.test-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.test-header h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin: 0;
+  flex: 1;
+}
+
+.test-id-badge {
+  background: #6366f1;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.test-info {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.test-info p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.test-info strong {
+  color: #1a1a1a;
+}
+
+.test-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.test-actions .btn {
+  flex: 1;
+}
+
+/* Join Section (Student) */
+/* Form styles removed - Student section not needed */
+
+
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: capitalize;
+}
+
+.btn-primary {
+  background: #6366f1;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(99, 102, 241, 0.3);
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #1a1a1a;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3);
+}
+
+.btn-large {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tests-header {
+    padding: 1.5rem;
+  }
+
+  .tests-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .role-selector {
+    padding: 1.5rem;
+  }
+
+  .content-layout {
+    padding: 1rem;
+  }
+
+  .join-card {
+    padding: 1.5rem;
+  }
+
+  .tests-grid {
+    grid-template-columns: 1fr;
+  }
+}

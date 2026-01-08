@@ -1,0 +1,17 @@
+.live-feed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.feed-item {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.feed-item:hover {
+  transform: translateY(-4px);
+}
